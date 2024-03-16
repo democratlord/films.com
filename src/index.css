@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tahoma', sans-serif;
+}
+#root {
+  /* flex-контейнер для <header>, <main> и <footer> */
+  display: flex;
+  /* flex-элементы <header>, <main> и <footer> выстаиваются по вертикали */
+  flex-direction: column;
+  /* вся высота viewport браузера */
+  min-height: 100vh;
+}
+main {
+  padding-top: 20px;
+  /*
+  может как увеличиваться, так и уменьшаться, чтобы вместе с
+  <header> и <footer> занять всю высоту viewport браузера
+  */
+  flex: 1 1 auto;
+}
+.page-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  box-shadow: none;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card .card-title {
+  font-size: 18px;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+}
+
+.error{
+  text-align: center;
+}
+
+label {
+  margin-right: 50px;
+}
+.logo{
+  height: 70px;
+  width: 70px;
+  margin-top: -5px;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #26a69a;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  animation: rotation 1s linear infinite;
+  position: relative;
+  transform: translateZ(0);
+  margin-top: 20px;
+  }
+
+
+  @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+.footer{
+  background: #26a69a;
+}
+a{
+  color: #26a69a;
+}
+.header{
+  background: #26a69a;
+}
+.ph{
+  width: 100%;
+}
