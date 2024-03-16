@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/democratlord/films.com.git/static/css/main.0667c30f.css",
+    "main.js": "/democratlord/films.com.git/static/js/main.b2212fe0.js",
+    "index.html": "/democratlord/films.com.git/index.html",
+    "main.0667c30f.css.map": "/democratlord/films.com.git/static/css/main.0667c30f.css.map",
+    "main.b2212fe0.js.map": "/democratlord/films.com.git/static/js/main.b2212fe0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0667c30f.css",
+    "static/js/main.b2212fe0.js"
+  ]
+}
