@@ -19,7 +19,7 @@ class Main extends React.Component {
             show: 'search'
         });
         search = encodeURIComponent(search);
-        let url = `http://www.omdbapi.com/?apikey=b14985af&s=${search}`;
+        let url = `https://www.omdbapi.com/?apikey=b14985af&s=${search}`;
         if (type !== 'all') {
             url = url + `&type=${type}`;
         }
@@ -40,7 +40,7 @@ class Main extends React.Component {
             loading: true,
             show: 'movie'
         });
-        fetch(`http://www.omdbapi.com/?apikey=b14985af&i=${id}&plot=full`)
+        fetch(`https://www.omdbapi.com/?apikey=b14985af&i=${id}&plot=full`)
             .then(response => response.json())
             .then(data => {
                 this.setState({
@@ -51,7 +51,7 @@ class Main extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://www.omdbapi.com/?apikey=b14985af&s=matrix')
+        fetch('https://www.omdbapi.com/?apikey=b14985af&s=matrix')
             .then(response => response.json())
             .then(data => {
                 this.setState({
